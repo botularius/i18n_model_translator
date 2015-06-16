@@ -6,9 +6,9 @@ require 'i18n_translator/version'
 Gem::Specification.new do |spec|
   spec.name          = "i18n_translator"
   spec.version       = I18nTranslator::VERSION
-  spec.authors       = ["Patrick Nitschke"]
-  spec.email         = ["patrick.nits@googlemail.com"]
-  spec.summary       = %q{Generate I18n Translation Files}
+  spec.authors       = ["Jens Freiling"]
+  spec.email         = ["jcfrei@uni-koblenz.de"]
+  spec.summary       = %q{Generate I18n Model Translation Files}
   spec.description   = %q{Yes...}
   spec.homepage      = ""
   spec.license       = "MIT"
@@ -17,8 +17,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
-
-  spec.add_runtime_dependency 'bing_translator', '~> 4.4.0'
 
   spec.add_dependency 'rails', '~> 4.0'
   spec.add_dependency 'i18n'

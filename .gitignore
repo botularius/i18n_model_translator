@@ -13,3 +13,8 @@
 *.a
 mkmf.log
 .idea
+
+# Ignore RVM autoconfig file
+.rvmrc
+.ruby-version
+.ruby-gemset
