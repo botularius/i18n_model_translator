@@ -1,7 +1,7 @@
-require 'i18n_translator/version'
+require 'i18n_model_translator/version'
 
-module I18nTranslator
-  require 'i18n_translator/railtie' if defined?(Rails)
+module I18nModelTranslator
+  require 'i18n_model_translator/railtie' if defined?(Rails)
   class << self
     attr_accessor :configuration
   end

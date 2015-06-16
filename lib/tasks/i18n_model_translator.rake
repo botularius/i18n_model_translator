@@ -1,6 +1,6 @@
-namespace :i18n_translator do
+namespace :i18n_model_translator do
 
-  require 'i18n_translator/models/model_translation'
+  require 'i18n_model_translator/models/model_translation'
 
   desc 'prints out the locale for one specific model'
   task :print_model, [:model] => :environment do |t, args|

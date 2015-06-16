@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'i18n_translator/version'
+require 'i18n_model_translator/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "i18n_translator"
-  spec.version       = I18nTranslator::VERSION
+  spec.name          = "i18n_model_translator"
+  spec.version       = I18nModelTranslator::VERSION
   spec.authors       = ["Jens Freiling"]
   spec.email         = ["jcfrei@uni-koblenz.de"]
   spec.summary       = %q{Generate I18n Model Translation Files}

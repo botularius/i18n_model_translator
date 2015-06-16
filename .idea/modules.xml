@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/i18n_model_translator.iml" filepath="$PROJECT_DIR$/.idea/i18n_model_translator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/i18n_translator.iml" filepath="$PROJECT_DIR$/.idea/i18n_translator.iml" />
     </modules>
   </component>
