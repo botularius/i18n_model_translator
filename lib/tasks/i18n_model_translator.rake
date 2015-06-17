@@ -4,12 +4,14 @@ namespace :i18n_model_translator do
 
   desc 'prints out the locale for one specific model'
   task :print_model, [:model] => :environment do |t, args|
-    puts I18nTranslator::Models::ModelTranslation.generate_model_translation(args[:model].constantize, :en)
+    model = args[:model].classify.constantize
+    puts I18nTranslator::Models::ModelTranslation.generate_model_translation(model, :en)
   end
 
   desc 'prints out the model locale for the given model into /config/locales/models/model_name/en.yml'
   task :print_model_to_file, [:model] => :environment do |t, args|
-    I18nTranslator::Models::ModelTranslation.write_model_translation(args[:model].constantize, :en)
+    model = args[:model].classify.constantize
+    I18nTranslator::Models::ModelTranslation.write_model_translation(model, :en)
   end
 
   desc 'prints out the locales for each model in the environment'
