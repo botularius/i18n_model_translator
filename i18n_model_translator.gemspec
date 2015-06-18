@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jens Freiling"]
   spec.email         = ["jcfrei@uni-koblenz.de"]
   spec.summary       = %q{Generate I18n Model Translation Files}
-  spec.description   = %q{Yes...}
-  spec.homepage      = ""
+  spec.description   = %q{Generate I18n Active Record Model Translation Files}
+  spec.homepage      = "https://github.com/botularius/i18n_model_translator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

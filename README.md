@@ -1,13 +1,15 @@
 # I18nModelTranslator
 
 Gem that generates i18n model translations for existing models. If you have descriptive column names in english it will generate the following files for your models:
-config/locales/models/model_name/en.yml
+config/locales/models/model_name/en.yml.
+More details can be found [on the blog coding-is-art.com](http://coding-is-art.com/rails-model-translations/ "i18n Active Record Model translations"): 
+
 
 This is an example outcome:
 
 ```
 en:
-  active_record:
+  activerecord:
     models:
       webinar_presenter:
         one: Webinar presenter
