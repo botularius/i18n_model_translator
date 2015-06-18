@@ -57,6 +57,7 @@ module I18nTranslator
           models = ActiveRecord::Base.descendants
           models.delete([ActiveRecord::SchemaMigration])
           models.reject! { |model| model.name.include?('HABTM') | !model.table_exists? }
+          return models
         end
 
         def write_to_file(model, locale, content)

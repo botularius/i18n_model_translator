@@ -63,6 +63,11 @@ This gem gives you four rake tasks to create the model i18ns:
 
     $ rake i18n_model_translator:print_all_models_to_file[model]
 
+## Attention ZSH Users
+
+You need to escape the `[` and `]` like this:
+
+    $ rake i18n_model_translator:print_model\[model\]
 
 ## Contributing
 
