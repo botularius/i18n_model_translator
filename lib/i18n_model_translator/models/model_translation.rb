@@ -6,11 +6,11 @@ module I18nTranslator
       class << self
 
         def generate_model_translation(model, locale)
-          active_record_hash = {active_record: {}}
+          active_record_hash = {activerecord: {}}
           names = generate_model_names(model)
           attributes = generate_model_attributes(model)
-          active_record_hash[:active_record].merge!(names)
-          active_record_hash[:active_record].merge!(attributes)
+          active_record_hash[:activerecord].merge!(names)
+          active_record_hash[:activerecord].merge!(attributes)
           {locale.to_sym => active_record_hash}.deep_stringify_keys.psych_to_yaml
         end
 
